@@ -13,7 +13,35 @@
 		BF2547CF1FC57DB6006C6BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2547CE1FC57DB6006C6BC0 /* Assets.xcassets */; };
 		BF2547D21FC57DB6006C6BC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2547D01FC57DB6006C6BC0 /* LaunchScreen.storyboard */; };
 		BF2547DA1FC581F8006C6BC0 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2547D91FC581F8006C6BC0 /* Common.swift */; };
+		BF2547E41FC59143006C6BC0 /* SwiftyCommonFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2547E21FC59143006C6BC0 /* SwiftyCommonFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF2547E71FC59143006C6BC0 /* SwiftyCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2547E01FC59143006C6BC0 /* SwiftyCommon.framework */; };
+		BF2547E81FC59143006C6BC0 /* SwiftyCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF2547E01FC59143006C6BC0 /* SwiftyCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BF2547ED1FC5918D006C6BC0 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2547D91FC581F8006C6BC0 /* Common.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF2547E51FC59143006C6BC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF2547BC1FC57DB6006C6BC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF2547DF1FC59143006C6BC0;
+			remoteInfo = SwiftyCommonFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BF2547EC1FC59143006C6BC0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BF2547E81FC59143006C6BC0 /* SwiftyCommon.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BF2547C41FC57DB6006C6BC0 /* SwiftyCommon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyCommon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +52,21 @@
 		BF2547D11FC57DB6006C6BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF2547D31FC57DB6006C6BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF2547D91FC581F8006C6BC0 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		BF2547E01FC59143006C6BC0 /* SwiftyCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF2547E21FC59143006C6BC0 /* SwiftyCommonFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyCommonFramework.h; sourceTree = "<group>"; };
+		BF2547E31FC59143006C6BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BF2547C11FC57DB6006C6BC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2547E71FC59143006C6BC0 /* SwiftyCommon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF2547DC1FC59143006C6BC0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				BF2547C61FC57DB6006C6BC0 /* SwiftyCommon */,
+				BF2547E11FC59143006C6BC0 /* SwiftyCommonFramework */,
 				BF2547C51FC57DB6006C6BC0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				BF2547C41FC57DB6006C6BC0 /* SwiftyCommon.app */,
+				BF2547E01FC59143006C6BC0 /* SwiftyCommon.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,7 +108,27 @@
 			path = SwiftyCommon;
 			sourceTree = "<group>";
 		};
+		BF2547E11FC59143006C6BC0 /* SwiftyCommonFramework */ = {
+			isa = PBXGroup;
+			children = (
+				BF2547E21FC59143006C6BC0 /* SwiftyCommonFramework.h */,
+				BF2547E31FC59143006C6BC0 /* Info.plist */,
+			);
+			path = SwiftyCommonFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BF2547DD1FC59143006C6BC0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2547E41FC59143006C6BC0 /* SwiftyCommonFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		BF2547C31FC57DB6006C6BC0 /* SwiftyCommon */ = {
@@ -77,15 +138,35 @@
 				BF2547C01FC57DB6006C6BC0 /* Sources */,
 				BF2547C11FC57DB6006C6BC0 /* Frameworks */,
 				BF2547C21FC57DB6006C6BC0 /* Resources */,
+				BF2547EC1FC59143006C6BC0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BF2547E61FC59143006C6BC0 /* PBXTargetDependency */,
 			);
 			name = SwiftyCommon;
 			productName = SwiftyCommon;
 			productReference = BF2547C41FC57DB6006C6BC0 /* SwiftyCommon.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BF2547DF1FC59143006C6BC0 /* SwiftyCommonFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF2547E91FC59143006C6BC0 /* Build configuration list for PBXNativeTarget "SwiftyCommonFramework" */;
+			buildPhases = (
+				BF2547DB1FC59143006C6BC0 /* Sources */,
+				BF2547DC1FC59143006C6BC0 /* Frameworks */,
+				BF2547DD1FC59143006C6BC0 /* Headers */,
+				BF2547DE1FC59143006C6BC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyCommonFramework;
+			productName = SwiftyCommonFramework;
+			productReference = BF2547E01FC59143006C6BC0 /* SwiftyCommon.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +179,10 @@
 				ORGANIZATIONNAME = MZC;
 				TargetAttributes = {
 					BF2547C31FC57DB6006C6BC0 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					BF2547DF1FC59143006C6BC0 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -117,6 +202,7 @@
 			projectRoot = "";
 			targets = (
 				BF2547C31FC57DB6006C6BC0 /* SwiftyCommon */,
+				BF2547DF1FC59143006C6BC0 /* SwiftyCommonFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +215,13 @@
 				BF2547D21FC57DB6006C6BC0 /* LaunchScreen.storyboard in Resources */,
 				BF2547CF1FC57DB6006C6BC0 /* Assets.xcassets in Resources */,
 				BF2547CD1FC57DB6006C6BC0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF2547DE1FC59143006C6BC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +238,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BF2547DB1FC59143006C6BC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2547ED1FC5918D006C6BC0 /* Common.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF2547E61FC59143006C6BC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF2547DF1FC59143006C6BC0 /* SwiftyCommonFramework */;
+			targetProxy = BF2547E51FC59143006C6BC0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BF2547CB1FC57DB6006C6BC0 /* Main.storyboard */ = {
@@ -277,6 +386,7 @@
 		BF2547D71FC57DB6006C6BC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5RF3WWGD36;
@@ -293,6 +403,7 @@
 		BF2547D81FC57DB6006C6BC0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5RF3WWGD36;
@@ -303,6 +414,56 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BF2547EA1FC59143006C6BC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5RF3WWGD36;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SwiftyCommonFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snsd.SwiftyCommonFramework;
+				PRODUCT_NAME = SwiftyCommon;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BF2547EB1FC59143006C6BC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5RF3WWGD36;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SwiftyCommonFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snsd.SwiftyCommonFramework;
+				PRODUCT_NAME = SwiftyCommon;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -323,6 +484,15 @@
 			buildConfigurations = (
 				BF2547D71FC57DB6006C6BC0 /* Debug */,
 				BF2547D81FC57DB6006C6BC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF2547E91FC59143006C6BC0 /* Build configuration list for PBXNativeTarget "SwiftyCommonFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF2547EA1FC59143006C6BC0 /* Debug */,
+				BF2547EB1FC59143006C6BC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

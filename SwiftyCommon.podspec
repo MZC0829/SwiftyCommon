@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "SwiftyCommon"
-s.version      = "1.0.0"
+s.version      = "2.0.0"
 s.summary      = "Swifty Common."
 s.description  = "Swift common function."
 s.homepage     = "https://github.com/MZC0829/SwiftyCommon"

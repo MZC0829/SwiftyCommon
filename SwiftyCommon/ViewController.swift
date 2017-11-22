@@ -15,7 +15,7 @@ class ViewController: UIViewController
     {
         super.viewDidLoad()
         
-        print(transToMinSec(second: 3599))
+        print(transToMinSec(second: 3600))
         
         print(transToHourMinSec(second: 2344))
         
